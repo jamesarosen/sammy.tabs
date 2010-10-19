@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>sammy-tabs test suite</title>
+    <link rel="stylesheet" href="vendor/qunit.css" type="text/css" media="screen" />
+
+    <!-- vendor support: -->
+    <script src='jquery-1.4.3.min.js'></script>
+    <script src="qunit.js"></script>
+    <script src="sammy-0.6.2.min.js"></script>
+
+    <!-- libraries under test: -->
+    <script src='../lib/sammy.tabs-1.0.js'></script>
+
+    <!-- test cases: -->
+    <script src='./sammy.tabs.test.js'></script>
+  </head>
+  <body>
+    <div class='tabbed_container'>
+      <nav class='tab_links'>
+        <a href='#foo'>Foo</a>
+        <a href='#bar'>Bar</a>
+        <a href='#baz'>Baz</a>
+      </nav>
+      <div class='tab_canvas'>
+        <div id='foo'>Foo Content</div>
+        <div id='bar'>Bar Content</div>
+        <div id='baz'>Baz Content</div>
+      </div>
+    </div>
+
+    <div class='tabbed_container' data-sammy-tabset='tabset2'>
+      <nav class='tab_links'>
+        <a href='#qux'>Qux</a>
+        <a href='#quux'>Quux</a>
+      </nav>
+      <div class='tab_canvas'>
+        <div id='qux'>Qux Content</div>
+        <div id='quux'>Quux Content</div>
+      </div>
+    </div>
+  </body>
+</html>
